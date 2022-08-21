@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[]){
+
+    int M, N, G;
+    int linha_G, coluna_G;
+    int i = 0, j = 0, k = 0;
+
+    scanf("%d %d", &M, &N);
+
+    char Matriz[M][N];
+
+    for(;k < M; k++){
+        scanf("%s", &Matriz[k][0]);
+    }
+
+    for(; i < M; i++){
+        for(; j < N; j++){
+            if(Matriz[i][j] == G){
+                linha_G = i;
+                coluna_G = j;
+            }
+        }
+    }
+    while(0){
+
+        if(linha_G == 0 || coluna_G == 0){
+            if(Matriz[linha_G+1][coluna_G] == 'V'){
+                Matriz[linha_G][coluna_G] = 'T';
+                linha_G++;
+                printf("TROQUEI1\n");
+            }
+            if(Matriz[linha_G][coluna_G+1] == 'V'){
+                Matriz[linha_G][coluna_G] = 'T';
+                coluna_G++;
+                printf("TROQUEI2\n");
+            }
+        }
+        if(coluna_G == N || linha_G == M){
+            if(Matriz[linha_G-1][coluna_G] == 'V'){
+                Matriz[linha_G][coluna_G] = 'T';
+                linha_G--;
+                printf("TROQUEI3\n");
+            }
+            if(Matriz[linha_G][coluna_G-1] == 'V'){
+                Matriz[linha_G][coluna_G] = 'T';
+                coluna_G--;
+                printf("TROQUEI4\n");
+            }
+        }
+
+        if(Matriz[linha_G][coluna_G] == 'S'){
+            printf("sim\n");
+        }
+
+    }
+    return 0;
+}

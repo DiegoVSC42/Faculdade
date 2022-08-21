@@ -1,0 +1,8 @@
+receba um numero N acima de 48
+divida N por 7
+caso haja resto 
+caso não haja resto divida o resultado por 7
+continue dividindo por 7 os numeros sem resto ate que N seja igual a 1
+some todos os restos
+mostre resultado
+fim

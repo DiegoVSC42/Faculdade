@@ -1,0 +1,14 @@
+receba o valor da compra
+receba o valor pago
+defina quais sao as notas
+diminua a quantidade de dinheiro pelo valor do produto resultando no troco
+divida o troco por 100, se o resto for 0 mostre o resultado
+divida o troco por 50, se o resto for 0 mostre o resultado
+divida o troco por 20, se o resto for 0 mostre o resultado
+divida o troco por 10, se o resto for 0 mostre o resultado
+divida o troco por 5, se o resto for 0 mostre o resultado
+divida o troco por 2, se o resto for 0 mostre o resultado
+fim do algoritmo
+
+
+ int N100 = 100, N50 = 50, N20 = 20, N10 = 10, N5 = 5, N2 = 2;

@@ -1,0 +1,9 @@
+declare N,i e a soma
+iguale a soma a 0
+iguale i a 1
+toda vez que o i for divisivel por 2 e o resto for 0 use o numero para a soma
+some i + 1 ate chegar a N
+some todos os numeros de i divisiveis por 2
+mostre a soma
+fim
+

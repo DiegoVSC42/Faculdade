@@ -1,0 +1,8 @@
+receba os valores de x e y
+verifique se x é maior que zero
+de acordo com o valor de x verifique se y é maior ou menor que 0
+caso x seja maior que zero e y também, escreva primeiro quadrante
+caso x seja maior que zero e y não, escreva quarto quadrante
+caso x seja menor que zero e y tambem, escreva terceiro quadrante
+caso x seja menor que zero e y não, escreva quarto quadrante
+fim

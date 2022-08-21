@@ -1,0 +1,35 @@
+INICIO
+
+receba o tamanho da matriz sendo "m" a variavel para linha e "n" para coluna
+crie uma matriz do tamanho recebido
+multiplique os valores de m e n para saber a quantidade de elementos do labirinto
+receba a matriz do labirinto
+localize o G procurando linha por linha e coluna por coluna
+guarde as coordenadas da linha de G e da coluna de G 
+percorra toda a matriz do labirinto enquanto o indice for menor que a quantidade de elementos do labirinto
+caso a linha de G for maior que 0 e menor que o tamanho da linha sera possivel mover para cima e para baixo
+caso a linha acima de G tiver a letra V mova o G para cima e marque com um X a posiçao anterior de G 
+caso a linha acima de G não seja a letra V e sim a letra S, mova G para cima,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+se não ocorrer os casos anteriores verifique se a linha abaixo de G tem a letra V,caso tenha, mova G para baixo e marque com um X a posição anterior de G 
+caso a linha abaixo de G não seja a letra V e sim a letra S, mova G para baixo,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+caso a linha de G for igual a 0 não será mais possivel mover-se para cima
+caso a linha abaixo de G tiver a letra V mova o G para baixo e marque com um X a posiçao anterior de G 
+caso a linha abaixo de G não seja a letra V e sim a letra S, mova G para baixo,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+caso a linha de G for igual ao tamanho de m-1 não será mais possivel mover-se para baixo
+caso a linha acima de G tiver a letra V mova o G para cima e marque com um X a posiçao anterior de G 
+caso a linha acima de G não seja a letra V e sim a letra S, mova G para cima,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+agora faça a movimentaçao de G para os lados
+caso a coluna de G for maior que 0 e menor que o tamanho da coluna sera possivel mover para esquerda e para direita
+caso a coluna à esquerda de G tiver a letra V mova o G para esquerda e marque com um X a posiçao anterior de G 
+caso a coluna à esquerda de G não seja a letra V e sim a letra S, mova G para esquerda,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+se não ocorrer os casos anteriores verifique se a coluna à direita de G tem a letra V,caso tenha, mova G para direita e marque com um X a posição anterior de G 
+caso a coluna à direita de G não seja a letra V e sim a letra S, mova G para direita,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+caso a coluna de G for igual a 0 não será mais possivel mover-se para esquerda
+caso a coluna à direita de G tiver a letra V mova o G para direita e marque com um X a posiçao anterior de G 
+caso a coluna à direita de G não seja a letra V e sim a letra S, mova G para direita,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+caso a coluna de G for igual ao tamanho de n-1 não será mais possivel mover-se para direita
+caso a coluna à esquerda de G tiver a letra V mova o G para esquerda e marque com um X a posiçao anterior de G 
+caso a coluna à esquerda de G não seja a letra V e sim a letra S, mova G para esquerda,marque com um X a posiçao anterior de G, escreva "sim", caso isso aconteça o Gabriel conseguiu sair do labirinto
+Caso nenhum desses casos aconteça, escreva "não", caso isso aconteça, Gabriel não conseguiu sair do labirinto
+
+FIM

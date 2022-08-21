@@ -1,0 +1,8 @@
+Receba a quantidade de dias
+Divida a quantidade de dias por 360
+Divida a quantidade de dias por 30
+Mostrar o resultado de dias em anos e meses
+caso a quantidade de dias for menor que 30 mostre apenas a quantidade de dias
+
+
+

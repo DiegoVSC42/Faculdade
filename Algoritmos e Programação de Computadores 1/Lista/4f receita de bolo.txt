@@ -1,0 +1,5 @@
+Receba um numero N inteiro
+divida N por 2
+se o resto da divisão for 0 escreva "par"
+se o resto da divisão não for 0 escreva "impar
+fim

@@ -1,0 +1,13 @@
+Receba um numero N entre 0 e 9
+se N for 0 escreva zero
+se N for 1 escreva um
+se N for 2 escreva dois
+se N for 3 escreva três
+se N for 4 escreva quatro
+se N for 5 escreva cinco
+se N for 6 escreva seis
+se N for 7 escreva sete
+se N for 8 escreva oito
+se N for 9 escreva nove
+se N nao for nenhum numero entre 0 e 9 ele não podera ser escrito
+fim

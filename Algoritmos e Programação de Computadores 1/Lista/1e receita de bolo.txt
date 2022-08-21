@@ -1,0 +1,17 @@
+receba a idade do amigo1, amigo2 e do amigo3
+descobrir quem tem maior idade entre os 3
+compare a idade do amigo1 com amigo2
+se amigo1 for maior compare com amigo3
+então o amigo1 vai ser o mais velho
+caso contrario
+compare amigo2 com amigo3
+se amigo2 for maior que amigo3 entao o amigo 2 é o mais velho
+caso contrario
+compare amigo3 com amigo2
+se amigo3 for maior que amigo2 entao amigo3 é o mais velho
+caso contrario 
+nao existe mais velho
+fim
+
+
+

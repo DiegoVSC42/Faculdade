@@ -1,0 +1,20 @@
+DOUGLAS 3	
+RAFAEL  4 		
+GABRIEL 5
+FELIPPE 9
+
+receba a quantidade de moedas de douglas, rafael, gabriel e felippe
+descobrir quem tem mais moedas e quantas sao entre douglas, rafael e gabriel
+douglas precisará receber a maior quantidade de moedas menos a quantidade de moedas que ele tem 
+rafael precisará receber a maior quantidade de moedas menos a quantidade de moedas que ele tem 
+gabriel precisará receber a maior quantidade de moedas menos a quantidade de moedas que ele tem 
+felippe tem ao menos a soma de moedas que douglas, rafael e gabriel precisam ?
+se nao tiver, entao não é possivel realizar a distribuição
+se tiver vao sobrar com o felippe a quantidade de moedas que ele começou menos a quantidade de moedas que os outros precisam
+a quantidade de moedas que sobrou com o felippe é o suficiente para dividir igualmente pelos outros 3 e nao deixar o felippe com moedas ?
+se for, entao é possivel realizar a distribuição
+caso contrario não é possivel realizar a distribuição
+
+
+
+

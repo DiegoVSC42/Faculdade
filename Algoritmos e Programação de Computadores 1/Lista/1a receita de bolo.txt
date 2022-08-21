@@ -1,0 +1,6 @@
+receba o valor dos lados do retangulo (base e altura)
+primeiro calcule a area
+para calcular a area é preciso multiplicar o numero da base pelo numero da altura
+para calcular o perimetro é preciso multiplicar por 2 a base e a altura
+após multiplicar a base e a altura some os resultados
+fim

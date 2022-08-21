@@ -1,0 +1,2 @@
+então se eu quiser escrever um string com N caracteres, 
+entao o vetor vai ter pelo menos N+1 índices?

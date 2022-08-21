@@ -1,0 +1,13 @@
+receba N
+verifique se N é maior ou igual a 49
+se N for menor que 49 nao será feito pois o resultado nao sera um numero de três algarismos
+caso isso aconteça finalize
+caso contrario
+divida N por 7
+se o resto da divisão de N por 7 for 0 divida o resultado por 7
+caso contrario
+verifique se o valor atual de N é 1 se nao for divida por 7
+caso contrario
+junte os restos para formar um unico numero
+mostrar numero formado
+fim
