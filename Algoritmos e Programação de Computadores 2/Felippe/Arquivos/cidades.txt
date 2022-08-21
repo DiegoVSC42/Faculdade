@@ -1,0 +1,3 @@
+brasilia 40
+sao_paulo 100
+belo_horizonte 750

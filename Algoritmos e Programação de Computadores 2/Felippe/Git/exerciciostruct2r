@@ -1,0 +1,26 @@
+/*
+Crie um programa que permita armazenar o matricula, a altura e da data de nascimento de 
+até 10 pessoas. 
+
+Cada pessoa deve ser representada por uma struct dentro de um vetor. 
+
+A data de nascimento também deve ser uma struct.
+
+O matricula e a altura de cada pessoa devem ser informados pelo teclado.
+
+A geração da data de nascimento deve ser feita aleatoriamente através da função abaixo
+
+*/
+
+/*
+    O programa deve, na tela de abertura, apresentar opções para:
+
+    inserir um matricula;
+    listar todos os matriculas e respectivas alturas;
+    listar as matriculas das pessoas que nasceram antes de uma certa data fornecida.
+
+
+Cada uma destas opções deve ser implementada em uma função separada.
+Para realizar o exercício, utilize como base o programa apresentado abaixo.
+
+*/
