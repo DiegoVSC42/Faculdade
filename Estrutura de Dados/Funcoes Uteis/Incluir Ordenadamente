@@ -1,0 +1,47 @@
+void incluir_ordenado(Lista *lista, int valor){
+
+    Registro *aux = NULL, *ant = NULL;
+    Registro *novo;
+    
+    novo = aloca_registro();
+    novo->valor = valor;
+
+    if (lista->inicio == NULL){
+        
+        lista->inicio = novo;
+
+    }else{
+        
+        aux = lista->inicio;
+
+        while (aux->prox != NULL && aux->valor <= valor){
+
+            ant = aux;
+            aux = aux->prox;
+
+        }
+
+        if (aux->valor >= valor){
+
+            if (ant == NULL){
+
+                lista->inicio = novo;
+
+            }else{
+
+                ant->prox = novo;
+
+            }
+
+            novo->prox = aux;
+        
+        }else{
+
+            aux->prox = novo;
+        
+        }
+    }
+
+    lista->qtd++;
+    
+}

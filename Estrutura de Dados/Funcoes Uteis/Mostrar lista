@@ -1,0 +1,20 @@
+void mostrar_lista(Lista *lista){
+
+    Registro *auxiliar;
+
+    if (lista->inicio == NULL){
+
+        printf("\n lista vazia");
+    
+    }else{
+
+        auxiliar = lista->inicio;
+
+        while (auxiliar != NULL){
+            
+            printf("\n Valor: %d", auxiliar->valor);
+            auxiliar = auxiliar->prox;
+        
+        }
+    }
+}

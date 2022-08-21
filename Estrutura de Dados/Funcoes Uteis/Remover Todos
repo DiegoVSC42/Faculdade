@@ -1,0 +1,48 @@
+int remover_todos(Lista *lista, int valor)
+{
+    if (lista->inicio == NULL){
+
+        return 0;
+    
+    }
+
+    Registro *aux = NULL, *ant = NULL;
+
+    aux = lista->inicio;
+    while (aux != NULL){
+
+        if (aux->valor == valor){
+
+            if (ant == NULL){
+                
+                lista->inicio = aux->prox;
+            
+            }else{
+                
+                ant->prox = aux->prox;
+            
+            }
+
+            lista->qtd--;
+            free(aux);
+
+            if (ant == NULL){
+                
+                aux = lista->inicio;
+
+            }else{
+            
+               aux = ant->prox;
+            
+            }
+            
+        }else{
+
+            ant = aux;
+            aux = aux->prox;
+        
+        }
+    }
+
+    return 0;
+}

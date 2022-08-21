@@ -1,0 +1,27 @@
+void incluir_no_final(Lista *lista, int valor){
+
+    Registro *novo, *auxiliar;
+    novo = aloca_registro();
+    novo->valor = valor;
+
+    if (lista->inicio == NULL){
+        
+        lista->inicio = novo;
+    
+    }else{
+
+        auxiliar = lista->inicio;
+
+        while(auxiliar->prox != NULL){
+
+            auxiliar = auxiliar->prox;
+
+        }
+
+        auxiliar->prox = novo;
+        
+    }
+
+    lista->qtd++;
+
+}

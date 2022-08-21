@@ -1,0 +1,30 @@
+void menu(Lista *lista){
+
+    int opcao;
+
+    do{
+
+        printf("\n");
+        scanf("%d", &opcao);
+
+        switch (opcao){
+
+        case 1:
+
+            break;
+        case 2:
+            
+            break;
+        case 3:
+
+            break
+        case 4:
+            printf("\n Saindo do programa");
+            break;
+        default:
+            printf("\n opcao invalida");
+            break;
+        }
+    } while (opcao != 4);
+}
+

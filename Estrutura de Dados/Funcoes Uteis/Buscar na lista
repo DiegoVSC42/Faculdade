@@ -1,0 +1,28 @@
+int busca_na_lista(lista *lista , int valor){
+
+    if (lista->inicio==NULL){
+
+        return 0;
+    
+    }
+
+    registro * auxiliar;
+
+    auxiliar = lista->inicio;
+
+    while(auxiliar!=NULL){
+
+        if (auxiliar->valor == valor){
+        
+            return 1;
+        
+        }else{
+         
+            auxiliar = auxiliar->prox;
+        
+        }
+    }
+
+    return 0;
+
+}

@@ -1,0 +1,41 @@
+int remover(lista *lista, int valor){
+
+    if (lista->inicio == NULL){
+
+        return 0;
+    
+    }
+
+    registro *auxiliar = NULL, *anterior = NULL;
+
+    auxiliar = lista->inicio;
+    
+    while (auxiliar != NULL)
+    {
+        if (auxiliar->valor == x)
+        {
+            
+            if (anterior == NULL){
+            
+                lista->inicio = auxiliar->prox;
+            
+            }else{
+            
+                anterior->prox = auxiliar->prox;
+            
+            }
+
+            lista->qtd--;
+            free(auxiliar);
+            return 1;
+
+        }
+
+        anterior = auxiliar;
+        auxiliar = auxiliar->prox;
+    
+    }
+
+    return 0;
+
+}

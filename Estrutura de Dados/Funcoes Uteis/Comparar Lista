@@ -1,0 +1,26 @@
+void compara_lista(Lista * lista1, Lista * lista2){
+
+    if (lista1->inicio == NULL || lista2->inicio == NULL){
+
+        printf("\n Nao existem elementos em comum");
+        return;
+    
+    }
+
+    registro * auxiliar;
+
+    auxiliar = lista1->inicio;
+
+    while(auxiliar!=NULL){
+
+        if(busca_na_lista(lista2,auxiliar->valor)){
+
+            printf("\n %d",auxiliar->valor);
+        
+        }
+        
+        auxiliar=auxiliar->prox;
+    
+    }
+
+}

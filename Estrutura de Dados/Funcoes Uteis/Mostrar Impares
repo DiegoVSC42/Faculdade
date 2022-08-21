@@ -1,0 +1,25 @@
+void mostrar_impares(Lista *lista){
+
+    if (lista->inicio == NULL){
+    
+        printf("\n Lista vazia");
+    
+    }else{
+        
+        registro *aux;
+        
+        aux = lista->inicio;
+
+        while (aux != NULL){
+            
+            if (aux->valor % 2 != 0){
+            
+                printf("\n%d", aux->valor);
+            
+            }
+            
+            aux = aux->prox;
+        
+        }
+    }
+}

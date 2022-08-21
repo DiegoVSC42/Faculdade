@@ -1,0 +1,78 @@
+int remove_primo(Lista *lista){
+
+    if (lista->inicio == NULL){
+
+        return 0;
+    
+    }
+
+    registro *aux = NULL;
+    aux = lista->inicio;
+    while (aux != NULL){
+
+        printf("\n Verificando se %d e primo: ", aux->valor);
+        printf("%d", verifica_primo(aux->valor));
+        
+        if (verifica_primo(aux->valor) == 1){
+
+            printf("\nEntrei no verificador");
+            printf("\nAnterior: %d", aux->ant);
+            printf("\tAtual: %d", aux->valor);
+            printf("\tProximo: %d", aux->prox->valor);
+            printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+
+            if (aux->ant == NULL){
+                
+                lista->inicio = aux->prox;
+                printf("\nEntrei no if 1");
+                printf("\nAnterior: %d", aux->ant);
+                printf("\tAtual: %d", aux->valor);
+                printf("\tProximo: %d", aux->prox->valor);
+                printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+                        
+            }else{
+                
+                aux->ant->prox = aux->prox;
+                printf("\nEntrei no else 1");
+                printf("\nAnterior: %d", aux->ant);
+                printf("\tAtual: %d", aux->valor);
+                printf("\tProximo: %d", aux->prox->valor);
+                printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+            
+            }
+
+            lista->qtd--;
+
+            if (aux->ant == NULL){
+                
+                aux = lista->inicio;
+                printf("\nEntrei no if 2");
+                printf("\nAnterior: %d", aux->ant);
+                printf("\tAtual: %d", aux->valor);
+                printf("\tProximo: %d", aux->prox->valor);
+                printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+
+            }else{
+            
+                aux = aux->ant->prox;
+                printf("\nEntrei no else 2");
+                printf("\nAnterior: %d", aux->ant);
+                printf("\tAtual: %d", aux->valor);
+                printf("\tProximo: %d", aux->prox->valor);
+                printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+            
+            }
+            free(aux);
+        }else{
+
+            aux->ant = aux;
+            aux = aux->prox;
+            printf("\nEntrei no else do verificador");
+            printf("\nAnterior: %d", aux->ant);
+            printf("\tAtual: %d", aux->valor);
+            printf("\tProximo: %d", aux->prox->valor);
+            printf("\tProximo do anterior: %d", aux->ant->prox->valor);
+        
+        }
+        
+    }

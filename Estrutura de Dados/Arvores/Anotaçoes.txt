@@ -1,0 +1,53 @@
+########################################################################################################################################################################################################################
+####################################################################     ARVORES BINÁRIAS     ##########################################################################################################################
+########################################################################################################################################################################################################################
+
+Elementos de uma árvore:
+
+Raiz:                                                       Elemento principal da arvore
+Nó:                                                         Elemento de uma arvore
+Folha:                                                      Nó sem filho
+Filho:                                                      Nó que tem pai
+Pai:                                                        Nó que tem filho
+Descendente:                                                Nós que consegue alcançar indo em direção as folhas
+Ancestral:                                                  Nós que consegue alcançar indo em direção a raiz
+
+Características de uma árvore:
+
+Profundidade/altura:                                        Nivel da folha mais em baixo ou valor do maior nivel
+Calculo da altura de um nó:                                 Altura do maior dos filhos + 1
+Nivel:                                                      Quantidade de "Geraçoes"da árvore comecando pela raiz em 0
+Cálculo da quantidade maxima de elementos por nivel         N^Nivel
+Arvore Estritamente Binária:                                Uma árvore em que quem tem filho tem 2 e que não tem filho único
+Cálculo da quantidade de elementos:                         2 * qtd_folhas - 1
+Arvore completa:                                            Uma arvore estritamente binária que todas as folhas estão no mesmo nivel
+Calculo da quantidade de elementos:                         2^(profundidade+1)-1
+Fator de balanceamento                                      Altura da esquerda - altura da direita
+Cálculo para verificar desbalanceamento                     Quando o |Fator de balanceamento| >= 2 
+
+Tipos de Rotacao:                                           
+
+Rotacao Simples à Esquerda(RSE):                            (--)                O nó com FB >= 2 se torna filho a esquerda de seu filho à direita
+Rotacao Simples à Esquerda(RSE):                            (-0)                O filho à esquerda de quem sobe se torna filho a direita de quem desce
+Rotacao Simples à Direita(RSD):                             (++)                O nó com FB >= 2 se torna filho a direita de seu filho à esquerda
+Rotacao Simples à Direita(RSD):                             (+0)                O filho à direita de quem sobe se torna filho a esquerda de quem desce
+Rotacao Dupla à Esquerda(RDE):                              RSD + RSE (-+)      O filho vira filho a direita do neto e o pai vira filho a esqueda do mesmo
+Rotacao Dupla à Direita(RDD):                               RSE + RSD (+-)      O filho vira filho a esquerda do neto e o pai vira filho a direita do mesmo
+OBS:                                                        Rotacoes duplas termina com o valor do nome, Ex : RDD faz primeiro uma RSE e depois uma RSD
+
+Formas de se percorrer uma arvore:                          Pré-Ordem, Em ordem, Pós-ordem
+
+Pré-Ordem:                                                  Raís->Esquerda->Direita (RED)
+Em-Ordem:                                                   Esquerda->Raiz->Direita (ERD)
+Pós-Ordem:                                                  Esquerda->Direita->Raiz (EDR)
+
+Remocão de elementos:        
+
+Elemento que não possui filhos:                             Apenas remove
+Elemento com um unico filho:                                O filho ocupa o lugar do pai
+Elemento com dois filhos:                                   O maior filho a esquerda ou o menor filho a direita ocupa o lugar do removido
+Obs:                                                        Se a arvore for desbalanceada qualquer forma serve, se a arvore for balanceada se utiliza o filho com maior altura
+
+##########################################################################################################################################################################################################################
+##########################################################################################################################################################################################################################
+##########################################################################################################################################################################################################################
