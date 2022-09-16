@@ -1,0 +1,53 @@
+ciclos : existir dois caminhos entre dois vertices (usa -se para sabe se existem varios caminhos
+de um grafo, tambem serve para encontrar pontes) se existir um backedge
+1 2
+2 3
+3 1
+3 4
+
+pontes : aresta que se for apagada faz aumentar a quantidade de componentes conectados
+
+aresta de retorno(backedge) : aresta que liga o vertice atual a um vertice visitado que nao
+é o pai, utilizado para ter ciclo;
+ex:
+
+1 -> 2
+2 -> 1 , 3 , 4
+3 -> 2 , 4
+4 -> 2 , 3 , 5
+5 -> 4
+
+in,out table: serve para saber se um valor é subarvore de outro
+ex
+1 -> 2 , 3
+2 -> 1 , 4 , 5
+3 -> 1 , 8
+4 -> 2 , 7
+5 -> 2
+6 ->
+7 -> 4
+8 -> 3
+in:
+1 -> 1
+2 -> 2
+3 -> 10
+4 -> 3
+5 -> 7
+6 -> 
+7 -> 4
+8 -> 11
+out:
+1 -> 14
+2 -> 9
+3 -> 13
+4 -> 6
+5 -> 8
+6 -> 
+7 -> 5
+8 -> 12
+
+calculo do diametro de um grafo: para se descobrir o maior caminho entre dois vertices 
+é escolher um vertice aleatorio e aplicar
+o dfs depois aplica o dfs no elemento mais distante deste primeiro vertice
+
+
