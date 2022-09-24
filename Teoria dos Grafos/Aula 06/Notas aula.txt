@@ -1,0 +1,16 @@
+BFS(FUNCIONA EM GRAFO): Cria uma pilha, coloca o elemento nela, depois coloca os elementos filhos dele na fila na ordem que foi 
+visitado, depois que visitar todos os elementos contidos tira o elemento da fila e coloca no vetor de ordem
+
+DFS(SO PARA ARVORE): coloca o valor raiz e os valores dentro dele ja na lista de ordem(pilha), em seguida verifica todos os 
+elementos do proximo elemento da lista e coloca eles na lista de ordem(pilha) e faz isso ate o fim.
+
+N AND OUT(SERVE PARA SABER)(DFS): cria uma tabela com (in|out|vis) e cria um contador, coloca o valor 
+atual no contador se ele nao tiver sido visitado coloca o valor do contador na entrada e visita os 
+valores da lista do valor atual, caso termine de visitar a lista de alguem, coloca o contador na saida do atual
+
+
+obs: cada valor tem seu in e seu out
+obs : b é sub de a caso b(in) > a(in) && b(out) < a(out)
+
+
+
