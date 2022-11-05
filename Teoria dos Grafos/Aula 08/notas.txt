@@ -1,0 +1,18 @@
+Djisktra: dado um grafo com seus pesos dar a maior distancia entre dois vertices levando em consideracao todos 
+os vertices
+
+RIP = fila de prioridade (consiste em um par, sendo vertice e distancia da raiz para este vertice)
+
+precisa de duas variaveis: current(atual), distancia
+
+percorre a lista de adjacencia do atual e verifica se a (distancia do atual + o peso(custo)) < distancia(valor da lista)
+caso certo, coloque o valor na distancia do valor da lista e coloque na fila
+
+dicas
+
+1º como fazer uma pilha onde sempre o menor elemento ta no top (min RIP)(fila que tira sempre o menor valor)
+min RIP (vertice,distancia) par ordenado
+
+2º inicializa Djisktra escolhendo a raiz colocando a distancia como 0 e colocando essa raiz na min RIP
+percorrer o Djisktra ate nao ter elementos na fila, depois de percorrer cada lista, tira o valor com menor distancia
+da min RIP
