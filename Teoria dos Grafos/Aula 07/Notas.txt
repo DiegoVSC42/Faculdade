@@ -1,0 +1,13 @@
+Backedge: visitado e nao é o pai do no, valida na hora que sai da lista
+in :
+lower:
+ponte: 
+
+toda vez que encontra um backedge, aplica o minimo para atualizar o valor do lower
+
+lower[vertice] = min(lower[vertice],in[filho])
+validar se  é ponte: 
+
+if(lower[filho] > in[vertice])
+    aresta = ponte
+lower[vertice] = min(lower[vertice],lower[filho])
