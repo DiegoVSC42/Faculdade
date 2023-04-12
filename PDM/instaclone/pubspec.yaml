@@ -1,5 +1,5 @@
 name: instaclone
-description: A new Flutter project.
+description: Instagram Flutter Clone.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -16,11 +16,12 @@ dependencies:
   localization: ^2.1.0
   flutter_svg_provider: ^1.0.3
   flutter_triple: ^1.2.7+4
+  flutter_modular: ^5.0.3
+  dio: ^5.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
 
 flutter:
@@ -31,7 +32,11 @@ flutter:
     - lib/assets/
     - lib/assets/i18n/
     - lib/assets/images/
-
+  
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: lib/assets/fonts/Billabong.ttf
 
 
 
