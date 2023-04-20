@@ -5,8 +5,16 @@ class UserPost extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('POST', style: TextStyle(fontSize: 48))),
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      body: Center(
+        child: Text(
+          'POST',
+          style: TextStyle(
+            fontSize: 48,
+          ),
+        ),
+      ),
     );
   }
 }
